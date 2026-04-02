@@ -1,0 +1,15 @@
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\bin\Debug\net8.0\Northwind.Common.DataContext.SqlServer.deps.json
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\bin\Debug\net8.0\Northwind.Common.DataContext.SqlServer.dll
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\bin\Debug\net8.0\Northwind.Common.DataContext.SqlServer.pdb
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\bin\Debug\net8.0\Northwind.Common.EntityModels.SqlServer.dll
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\bin\Debug\net8.0\Northwind.Common.EntityModels.SqlServer.pdb
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\obj\Debug\net8.0\Northwind.Common.DataContext.SqlServer.csproj.AssemblyReference.cache
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\obj\Debug\net8.0\Northwind.Common.DataContext.SqlServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\obj\Debug\net8.0\Northwind.Common.DataContext.SqlServer.AssemblyInfoInputs.cache
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\obj\Debug\net8.0\Northwind.Common.DataContext.SqlServer.AssemblyInfo.cs
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\obj\Debug\net8.0\Northwind.Common.DataContext.SqlServer.csproj.CoreCompileInputs.cache
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\obj\Debug\net8.0\Northwin.540084DC.Up2Date
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\obj\Debug\net8.0\Northwind.Common.DataContext.SqlServer.dll
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\obj\Debug\net8.0\refint\Northwind.Common.DataContext.SqlServer.dll
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\obj\Debug\net8.0\Northwind.Common.DataContext.SqlServer.pdb
+C:\Users\Andrey\source\repos\Lab3\Chapter03\Northwind.Common.DataContext.SqlServer\obj\Debug\net8.0\ref\Northwind.Common.DataContext.SqlServer.dll
