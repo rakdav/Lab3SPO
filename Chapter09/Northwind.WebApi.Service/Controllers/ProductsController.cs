@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Northwind.EntityModels;
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.Distributed; // Для интерфейса IDistributedCache
+using System.Text.Json; // Для класса JsonSerializer
 
 namespace Northwind.WebApi.Service.Controllers
 {
@@ -10,11 +13,20 @@ namespace Northwind.WebApi.Service.Controllers
         private int pageSize = 10;
         private readonly ILogger<ProductsController> _logger;
         private readonly NorthwindContext _db;
+
+        private readonly IMemoryCache _memoryCache;
+        private const string OutOfStockProductsKey = "OOSP";
+
+        private readonly IDistributedCache _distributedCache;
+        private const string DiscontinuedProductsKey = "DISCP";
         public ProductsController(ILogger<ProductsController> logger,
-        NorthwindContext context)
+        NorthwindContext context, IMemoryCache memoryCache,
+        IDistributedCache distributedCache)
         {
             _logger = logger;
             _db = context;
+            _memoryCache = memoryCache;
+            _distributedCache = distributedCache;
         }
         // GET: api/products
         [HttpGet]
@@ -33,20 +45,34 @@ namespace Northwind.WebApi.Service.Controllers
         [Produces(typeof(Product[]))]
         public IEnumerable<Product> GetOutOfStockProducts()
         {
-            return _db.Products
-            .Where(p => p.UnitsInStock == 0 && !p.Discontinued);
-        }
-        // GET: api/products/discontinued
-        [HttpGet]
-        [Route("discontinued")]
-        [Produces(typeof(Product[]))]
-        public IEnumerable<Product> GetDiscontinuedProducts()
-        {
-            return _db.Products
-            .Where(product => product.Discontinued);
+            // Попытка получить кэшированное значение
+            if (!_memoryCache.TryGetValue(OutOfStockProductsKey,
+            out Product[]? cachedValue))
+            {
+
+                // Если кэшированное значение не найдено, получить значение из БД
+                cachedValue = _db.Products.Where(p => p.UnitsInStock == 0 && !p.Discontinued).ToArray();
+
+                MemoryCacheEntryOptions cacheEntryOptions = new()
+                {
+                    SlidingExpiration = TimeSpan.FromSeconds(5),
+                    Size = cachedValue?.Length
+                };
+                _memoryCache.Set(OutOfStockProductsKey, cachedValue, cacheEntryOptions);
+            }
+            MemoryCacheStatistics? stats = _memoryCache.GetCurrentStatistics();
+
+            _logger.LogInformation($"Memory cache. Total hits: " +
+                $"{stats?.TotalHits}. Estimated size: {stats?.CurrentEstimatedSize}.");
+
+              return cachedValue ?? Enumerable.Empty<Product>();
         }
         // GET api/products/5
         [HttpGet("{id:int}")]
+        [ResponseCache(Duration = 5, // Cache-Control: max-age=5
+            Location = ResponseCacheLocation.Any, // Cache-Control: public    
+            VaryByHeader = "User-Agent" // Vary: User-Agent
+        )]
         public async ValueTask<Product?> Get(int id)
         {
             return await _db.Products.FindAsync(id);
@@ -55,7 +81,13 @@ namespace Northwind.WebApi.Service.Controllers
         [HttpGet("{name}")]
         public IEnumerable<Product> Get(string name)
         {
-            return _db.Products.Where(p => p.ProductName.Contains(name));
+            // Работает правильно один раз из трех
+            if (Random.Shared.Next(1, 4) == 1)
+            {
+                return _db.Products.Where(p => p.ProductName.Contains(name));
+            }
+            // Во всех остальных случаях выбрасывается исключение
+            throw new Exception("Randomized fault.");
         }
         // POST api/products
         [HttpPost]
@@ -95,5 +127,46 @@ namespace Northwind.WebApi.Service.Controllers
             }
             return NotFound();
         }
+        // GET: api/products/discontinued
+
+        [HttpGet]
+        [Route("discontinued")]
+        [Produces(typeof(Product[]))]
+        public IEnumerable<Product> GetDiscontinuedProducts()
+        {
+            // Попытка получить кэшированное значение
+            byte[]? cachedValueBytes = _distributedCache.Get(DiscontinuedProductsKey);
+            Product[]? cachedValue = null;
+            if (cachedValueBytes is null)
+            {
+                cachedValue = GetDiscontinuedProductsFromDatabase();
+            }
+            else
+            {
+                cachedValue = JsonSerializer.Deserialize<Product[]?>(cachedValueBytes);
+                if (cachedValue is null)
+                {
+                    cachedValue = GetDiscontinuedProductsFromDatabase();
+                }
+            }
+            return cachedValue ?? Enumerable.Empty<Product>();
+        }
+        private Product[]? GetDiscontinuedProductsFromDatabase()
+        {
+            Product[]? cachedValue = _db.Products.Where(product => product.Discontinued).ToArray();
+            DistributedCacheEntryOptions cacheEntryOptions = new()
+            {
+                // Разрешение читателям сбросить время хранения записи в кэше
+                SlidingExpiration = TimeSpan.FromSeconds(5),
+                // Установка абсолютного времени хранения записи в кэше
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromSeconds(20),
+            };
+            byte[]? cachedValueBytes =
+            JsonSerializer.SerializeToUtf8Bytes(cachedValue);
+            _distributedCache.Set(DiscontinuedProductsKey,
+            cachedValueBytes, cacheEntryOptions);
+            return cachedValue;
+        }
+
     }
 }

@@ -22,7 +22,7 @@ WriteLine(); WriteLine();
 
 if (key is ConsoleKey.D1 or ConsoleKey.NumPad1)
 {
-  builder.DataSource = "."; // Local SQL Server
+  builder.DataSource = "(localdb)\\MSSQLLocalDB"; // Local SQL Server
   // @".\apps-services-book"; // Local SQL Server with an instance name
 }
 else if (key is ConsoleKey.D2 or ConsoleKey.NumPad2)

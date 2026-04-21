@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\Northwind.Common.EntityModels.SqlServer.csproj": {}
+    "C:\\Users\\administrator\\Source\\Repos\\Lab3SPO\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\Northwind.Common.EntityModels.SqlServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\Northwind.Common.EntityModels.SqlServer.csproj": {
+    "C:\\Users\\administrator\\Source\\Repos\\Lab3SPO\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\Northwind.Common.EntityModels.SqlServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\Northwind.Common.EntityModels.SqlServer.csproj",
+        "projectUniqueName": "C:\\Users\\administrator\\Source\\Repos\\Lab3SPO\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\Northwind.Common.EntityModels.SqlServer.csproj",
         "projectName": "Northwind.Common.EntityModels.SqlServer",
-        "projectPath": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\Northwind.Common.EntityModels.SqlServer.csproj",
-        "packagesPath": "C:\\Users\\Andrey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\obj\\",
+        "projectPath": "C:\\Users\\administrator\\Source\\Repos\\Lab3SPO\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\Northwind.Common.EntityModels.SqlServer.csproj",
+        "packagesPath": "C:\\Users\\administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\administrator\\Source\\Repos\\Lab3SPO\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Andrey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

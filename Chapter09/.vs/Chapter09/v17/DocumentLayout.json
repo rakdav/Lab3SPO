@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter09\\",
+  "WorkspaceRootPath": "C:\\Users\\administrator\\source\\repos\\Lab3SPO\\Chapter09\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|c:\\users\\andrey\\source\\repos\\lab3\\chapter09\\northwind.webapi.service\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|c:\\users\\administrator\\source\\repos\\lab3spo\\chapter09\\northwind.webapi.service\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|solutionrelative:northwind.webapi.service\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|c:\\users\\andrey\\source\\repos\\lab3\\chapter09\\northwind.webapi.service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|c:\\users\\administrator\\source\\repos\\lab3spo\\chapter09\\northwind.webapi.service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|solutionrelative:northwind.webapi.service\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|c:\\users\\andrey\\source\\repos\\lab3\\chapter09\\northwind.webapi.service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|c:\\users\\administrator\\source\\repos\\lab3spo\\chapter09\\northwind.webapi.service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|solutionrelative:northwind.webapi.service\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|c:\\users\\andrey\\source\\repos\\lab3\\chapter09\\northwind.webapi.service\\northwind.webapi.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|c:\\users\\administrator\\source\\repos\\lab3spo\\chapter09\\northwind.webapi.service\\northwind.webapi.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{76A8D53F-8C91-40DC-8197-F37AB76A3146}|Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj|solutionrelative:northwind.webapi.service\\northwind.webapi.service.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -26,17 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter09\\Northwind.WebApi.Service\\Controllers\\ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\administrator\\source\\repos\\Lab3SPO\\Chapter09\\Northwind.WebApi.Service\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Northwind.WebApi.Service\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter09\\Northwind.WebApi.Service\\Controllers\\ProductsController.cs*",
-              "RelativeToolTip": "Northwind.WebApi.Service\\Controllers\\ProductsController.cs*",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAAAGAAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\administrator\\source\\repos\\Lab3SPO\\Chapter09\\Northwind.WebApi.Service\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Northwind.WebApi.Service\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAFQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-02T00:33:42.798Z",
               "EditorCaption": ""
@@ -45,40 +49,37 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter09\\Northwind.WebApi.Service\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\administrator\\source\\repos\\Lab3SPO\\Chapter09\\Northwind.WebApi.Service\\Program.cs",
               "RelativeDocumentMoniker": "Northwind.WebApi.Service\\Program.cs",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter09\\Northwind.WebApi.Service\\Program.cs",
+              "ToolTip": "C:\\Users\\administrator\\source\\repos\\Lab3SPO\\Chapter09\\Northwind.WebApi.Service\\Program.cs",
               "RelativeToolTip": "Northwind.WebApi.Service\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T00:32:50.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T00:32:50.502Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter09\\Northwind.WebApi.Service\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\administrator\\source\\repos\\Lab3SPO\\Chapter09\\Northwind.WebApi.Service\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Northwind.WebApi.Service\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter09\\Northwind.WebApi.Service\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\administrator\\source\\repos\\Lab3SPO\\Chapter09\\Northwind.WebApi.Service\\Properties\\launchSettings.json",
               "RelativeToolTip": "Northwind.WebApi.Service\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-02T00:32:11.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T00:32:11.199Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Northwind.WebApi.Service",
-              "DocumentMoniker": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter09\\Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj",
+              "Title": "Northwind.WebApi.Service.csproj",
+              "DocumentMoniker": "C:\\Users\\administrator\\source\\repos\\Lab3SPO\\Chapter09\\Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj",
               "RelativeDocumentMoniker": "Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj",
-              "ToolTip": "C:\\Users\\Andrey\\source\\repos\\Lab3\\Chapter09\\Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj",
+              "ToolTip": "C:\\Users\\administrator\\source\\repos\\Lab3SPO\\Chapter09\\Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj",
               "RelativeToolTip": "Northwind.WebApi.Service\\Northwind.WebApi.Service.csproj",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-02T00:31:13.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T00:31:13.724Z"
             }
           ]
         }
