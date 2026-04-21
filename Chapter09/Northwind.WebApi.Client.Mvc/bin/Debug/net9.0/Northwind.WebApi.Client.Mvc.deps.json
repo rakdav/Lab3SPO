@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Northwind.WebApi.Client.Mvc/1.0.0": {
+        "runtime": {
+          "Northwind.WebApi.Client.Mvc.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Northwind.WebApi.Client.Mvc/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

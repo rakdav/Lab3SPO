@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d9+fBmskm4M=",
+  "dgSpecHash": "tzr34DEbFLY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\administrator\\Source\\Repos\\Lab3SPO\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\Northwind.Common.EntityModels.SqlServer.csproj",
+  "projectFilePath": "C:\\Users\\administrator\\source\\repos\\Lab3SPO\\Chapter03\\Northwind.Common.EntityModels.SqlServer\\Northwind.Common.EntityModels.SqlServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\administrator\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\administrator\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

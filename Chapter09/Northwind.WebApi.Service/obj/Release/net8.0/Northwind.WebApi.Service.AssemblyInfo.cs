@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Northwind.WebApi.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17a01e75d811025c87d8c9bdedbbad0d5e38193c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Northwind.WebApi.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Northwind.WebApi.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

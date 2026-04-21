@@ -152,4 +152,3 @@ C:\Users\administrator\Source\Repos\Lab3SPO\Chapter09\Northwind.WebApi.Service\o
 C:\Users\administrator\Source\Repos\Lab3SPO\Chapter09\Northwind.WebApi.Service\obj\Debug\net8.0\Northwind.WebApi.Service.pdb
 C:\Users\administrator\Source\Repos\Lab3SPO\Chapter09\Northwind.WebApi.Service\obj\Debug\net8.0\Northwind.WebApi.Service.genruntimeconfig.cache
 C:\Users\administrator\Source\Repos\Lab3SPO\Chapter09\Northwind.WebApi.Service\obj\Debug\net8.0\ref\Northwind.WebApi.Service.dll
-C:\Users\administrator\Source\Repos\Lab3SPO\Chapter09\Northwind.WebApi.Service\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
